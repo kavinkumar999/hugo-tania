@@ -1,5 +1,5 @@
 <footer class="footer flex">
-    <section class="container">
+    {{/*  <section class="container">
         <nav class="footer-links">
             {{ range .Site.Menus.footer }}
             <a href="{{ .URL | relURL }}">{{ .Name }}</a>
@@ -7,7 +7,7 @@
         </nav>
 
         {{ partial "footer/custom" . }}
-    </section>
+    </section>  */}}
     {{- if and (or .Params.mathjax (and .Site.Params.mathjax (ne .Params.mathjax false))) (or .IsPage .IsHome) }}
     <script type="text/javascript">
         window.MathJax = {
